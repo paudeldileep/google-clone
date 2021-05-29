@@ -1,9 +1,11 @@
 import Head from "next/head";
-
+import Image from "next/image";
 import Avatar from "../components/Avatar";
+
 
 import {MicrophoneIcon,ViewGridIcon} from "@heroicons/react/solid";
 
+import {SearchIcon} from "@heroicons/react/outline";
 export default function Home() {
   return (
     <div>
@@ -41,6 +43,17 @@ export default function Home() {
         </div>
       </header>
       {/* Body */}
+
+        <form className="flex flex-col items-center mt-30 flex-grow">
+          <Image src="/logo.png" height="200" width="300"/>
+          <div className="flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border-gray-200 p-4 items-center sm:max-w-xl lg:max-w-2xl">
+
+            <SearchIcon className="h-5 mr-3 text-gray-500"/>
+            <input type="text" className="flex-grow focus:outline-none"/>
+            
+            <MicrophoneIcon className="h-5 ml-3 text-gray-500"/>
+          </div>
+        </form>
 
       {/* Footer */}
     </div>
