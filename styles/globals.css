@@ -6,4 +6,7 @@
     .a_link{
     @apply hover:underline;
     }
+    .btn{
+        @apply bg-white p-2  mr-3 border border-gray-200 rounded-md focus:bg-gray-200 hover:shadow-md;
+    }
 }
