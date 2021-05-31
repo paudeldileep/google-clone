@@ -5,6 +5,7 @@ import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
 
 import { SearchIcon, XIcon } from "@heroicons/react/outline";
 import Avatar from "./Avatar";
+import HeaderOptions from "./HeaderOptions";
 
 function Header() {
   const router = useRouter();
@@ -51,6 +52,7 @@ function Header() {
           {/* profile pic */}
           <Avatar url="/dileep.jpg"/>
       </div>
+        <HeaderOptions/>
     </header>
   );
 }
